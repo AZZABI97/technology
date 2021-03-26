@@ -36,7 +36,13 @@ public class Article extends AbstractPersistable<Long> {
     private Integer tremise;
 
     @Column
-    private String desc;
+    private String description;
+
+    @ManyToOne
+    private Marque marque;
+
+    @ManyToOne
+    private Categorie categorie;
 
     /*@OneToMany
     private List<Commande> commandes;*/

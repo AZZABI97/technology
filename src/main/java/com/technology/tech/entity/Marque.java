@@ -8,6 +8,7 @@ import org.springframework.lang.Nullable;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -23,6 +24,5 @@ public class Marque extends AbstractPersistable<Long> {
     @Column
     private String nom;
 
-    /*@OneToMany
-    private List<Article> articles;*/
+
 }

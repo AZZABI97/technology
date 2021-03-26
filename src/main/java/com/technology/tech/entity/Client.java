@@ -31,7 +31,7 @@ public class Client extends AbstractPersistable<Long> {
     private String sexe;
 
     @Column(name = "Adresse")
-    private String adr;
+    private String adresse;
 
     @Column(name = "Telephone")
     private String tel;
@@ -40,14 +40,14 @@ public class Client extends AbstractPersistable<Long> {
     private String cin;
 
     @Column(name = "Remarque")
-    private String rmq;
+    private String remarque;
 
-    /*@OneToOne
+    @OneToOne
     private User user;
 
     @ManyToOne
     private Ville ville;
 
     @OneToMany
-    private List<Commande> commandes;*/
+    private List<Commande> commandes;
 }

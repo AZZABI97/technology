@@ -29,8 +29,11 @@ public class Commande extends AbstractPersistable<Long> {
     private Float total;
 
     @Column
-    private String desc;
+    private String description;
 
-    /*@OneToOne
-    private Facture fact;*/
+    @OneToOne
+    private Facture facture;
+
+    @OneToMany
+    private List<Article> articles;
 }

@@ -8,7 +8,7 @@ import org.springframework.lang.Nullable;
 
 
 import javax.persistence.*;
-;
+;import java.util.List;
 
 @Entity
 @Table
@@ -23,6 +23,5 @@ public class Categorie extends AbstractPersistable<Long> {
     @Column
     private String nom;
 
-    /*@OneToMany
-    private List<Article> articles;*/
+
 }

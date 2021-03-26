@@ -18,11 +18,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class ModeLivraison extends AbstractPersistable<Long> {
 
-
-
     @Column
     private String mode;
 
     @Column
-    private String desc;
+    private String description;
 }

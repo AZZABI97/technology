@@ -24,8 +24,8 @@ public class Livraison extends AbstractPersistable<Long> {
     private Date date;
 
     @Column
-    private String desc;
+    private String description;
 
-    /*@ManyToOne
-    private ModeLivraison mode;*/
+    @OneToOne
+    private ModeLivraison mode;
 }

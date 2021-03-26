@@ -8,6 +8,7 @@ import org.springframework.lang.Nullable;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -33,11 +34,11 @@ public class Fournisseur extends AbstractPersistable<Long> {
     private String fax;
 
     @Column
-    private String adr;
+    private String adresse;
 
     @Column
-    private String desc;
+    private String description;
 
-    /*@OneToMany
-    private List<Article> articles;*/
+    @OneToMany
+    private List<Article> articles;
 }
