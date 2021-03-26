@@ -28,4 +28,7 @@ public class Livraison extends AbstractPersistable<Long> {
 
     @OneToOne
     private ModeLivraison mode;
+
+    @OneToOne
+    private Commande commande;
 }
